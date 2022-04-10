@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="..\sheets\input_form_style.css" />
+    <script defer href="..\script\input_form_script.js"></script>
+    <title>Baic Input Form</title>
+</head>
+
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input Fields</h1>
+        </header>
+        <div>
+            <label for="text">Text input type</label>
+            <input type="text" id="text" name="text" required>
+            <error-output class="text_error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password input type </label>
+            <input type="pwd" id="pwd" name="pwd">
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+        <div>
+            <label for="email">Email input type</label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+        <div>
+            <label for="url">URL input type</label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number input type</label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tel">Tel input type</label>
+            <input type="tel" id="tel" name="tel">
+            <error-output class="tel-error" for="tel"></error-output>
+        </div>
+        <div>
+            <label for="search">Search input type</label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div class="nativeDateAndTimePicker">
+            <label for="party">Choose date and time</label>
+            <input type="date" id="party" name="bday">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Choose salary</label>
+            <input type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
